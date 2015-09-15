@@ -125,4 +125,5 @@ var/
 .sass-cache/
 .DS_Store
 .idea
+skin/frontend/b-responsive/default/.sass-cache
 
