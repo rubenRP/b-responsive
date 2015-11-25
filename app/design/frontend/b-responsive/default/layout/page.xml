@@ -12,7 +12,7 @@
     <default translate="label" module="page">
         <label>All Pages</label>
 
-        <block type="page/html" name="root" output="toHtml" template="page/1column.phtml">
+        <block type="page/html" name="root" output="toHtml" template="page/default.phtml">
             <block type="page/html_head" name="head" as="head">
                 <action method="addJs"><script>prototype/prototype.js</script></action>
                 <action method="addJs"><script>lib/ccard.js</script></action>
@@ -50,10 +50,7 @@
                 <!--</action>-->
             </block>
 
-
-
             <block type="page/html_wrapper" name="page.skeleton" as="skeleton">
-
 
                     <!--<block type="core/template" name="page.responsive.menu" template="page/html/menu_mobile.phtml">
                         <block type="cms/block" name="header-menu-list">
@@ -159,7 +156,6 @@
             </block>
         </block>
         <block type="core/profiler" output="toHtml" name="core_profiler"/>
-
 
 
         <remove name="cart_sidebar"/>                   <!--Cart Sidebar-->
